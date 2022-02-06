@@ -34,16 +34,13 @@
         width: 100%;
     }
 
-    .item-top > img {
-        color: #d2d2d2;
+    .item-top > a {
         margin-bottom: 1rem;
         width: 50%;
     }
 
-    .item-bottom > img {
-        color: #d2d2d2;
+    .item-bottom > a {
         margin: 1rem;
-        width: 40%;
     }
     
     .item-bottom {
@@ -55,6 +52,7 @@
     }
 
     #profile {
+        text-align: center;
         background-color: #808080;
         border-radius: 50%;
         width: 50px;
@@ -64,9 +62,24 @@
     /* Main */
 
     .container {
-        background-color: #0707;
+        background-color: #141922;
         width: 100%;
         height: 100vh;
+    }
+
+    .upgrade {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, .25);
+    }
+
+    .nav-bar {
+        padding-top: 150px;
+        width: 100%;
+        height: 200px;
+        background-color: aqua;
     }
 
     .debug {
