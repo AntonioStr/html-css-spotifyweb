@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gotham', sans-serif;
-
+    transition: .5s;
 }
 
 @import url('http://fonts.cdnfonts.com/css/gotham');
@@ -72,8 +72,11 @@
         background-color: #141922;
         overflow-y: auto;
         width: 100%;
+        margin: 0 auto;
         height: calc(100vh - 150px);
     }
+
+    /* Upgrade section */
 
     .upgrade {
         padding: 20px;
@@ -99,11 +102,12 @@
         font-size: .7rem;
     }
 
+    /* Nav bar */
+
     .nav-bar {
         display: flex;
         padding-top: 150px;
         width: 100%;
-        background-color: aqua;
     }
 
     .nav-bar ul {
@@ -126,19 +130,60 @@
         text-decoration: none;
         font-weight: 500;
         color: #7b7e82;
-        font-size: 1rem;
+        font-size: .8rem;
     }
+
+    /* Card section */
 
     .container-card {
         background-color: lightgreen;
         height: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        margin: 0 5px 20px 0;
+        width: 45%;
+    }
+
+    .card img {
         width: 100%;
     }
 
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: .7rem;
+        font-weight: 100;
+        color: #7b7e82;
+    }
 
     /* Player */
 
     .player {
+        z-index: 9999;
         bottom: 0;
         position: fixed;
         height: 150px;
