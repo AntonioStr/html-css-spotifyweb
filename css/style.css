@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+
+}
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+/* scrollbar overflow-y: auto */ 
+
+/* XS Version */
+
+@media screen and (max-width: 576px) {
+    /* Left bar */
+
+    .left-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: tomato;
+        width: 100px;
+        height: calc( 100vh - 150px );
+    }
+    
+    .item-top {
+        background-color: red;
+        color: black;
+        width: 100%;
+    }
+
+    .item-bottom {
+        background-color: yellow;
+        width: 100%;
+        height: 100px;
+    }
+
+    .color {
+        background-color: pink;
+    }
+
+    /* Main */
+
+    .container {
+        background-color: #0707;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .debug {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Player */
+
+    .player {
+        bottom: 0;
+        position: fixed;
+        height: 150px;
+        width: 100%;
+        background-color: black;
+    }
+}
