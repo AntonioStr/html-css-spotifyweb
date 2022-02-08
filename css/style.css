@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gotham', sans-serif;
-    transition: .5s;
 }
 
 @import url('http://fonts.cdnfonts.com/css/gotham');
@@ -20,8 +19,7 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: tomato;
-        width: 100px;
-        height: calc( 100vh - 150px );
+        width: 50px;
         flex-shrink: 0;
         background-color: #000;
         z-index: 999;
@@ -37,12 +35,12 @@
     }
 
     .item-top > a {
-        margin-bottom: 1rem;
-        width: 50%;
+        margin-bottom: .5rem;
+        width: 60%;
     }
 
     .item-bottom > a {
-        margin: 1rem;
+        margin: .5rem;
     }
     
     .item-bottom {
@@ -50,15 +48,15 @@
     }
 
     #download {
-        width: 27%;
+        width: 40%;
     }
 
     #profile {
         text-align: center;
         background-color: #808080;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     /* Main */
@@ -73,14 +71,14 @@
         overflow-y: auto;
         width: 100%;
         margin: 0 auto;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 100px);
     }
 
     /* Upgrade section */
 
     .upgrade {
         padding: 20px;
-        width: calc( 100% - 100px );
+        width: calc( 100% - 50px );
         position: fixed;
         top: 0;
         background-color: rgba(0, 0, 0, .25);
@@ -106,7 +104,7 @@
 
     .nav-bar {
         display: flex;
-        padding-top: 150px;
+        padding-top: 100px;
         width: 100%;
     }
 
@@ -135,12 +133,14 @@
 
     /* Card section */
 
+    h1 {
+        color: #fff;
+    }
+
     .container-card {
-        background-color: lightgreen;
         height: 1000px;
         width: 90%;
         margin: 0 auto;
-        
     }
 
     .cards {
@@ -152,11 +152,12 @@
 
     .card {
         flex-wrap: wrap;
-        margin: 0 5px 20px 0;
-        width: 45%;
+        margin: 0 10px 20px 0;
+        width: 47%;
     }
 
     .card img {
+        border-radius: 10px;
         width: 100%;
     }
 
@@ -169,7 +170,7 @@
     .title {
         text-align: center;
         margin: 10px 0;
-        font-weight: 500;
+        font-weight: 700;
         color: #fff;
     }
 
@@ -186,8 +187,109 @@
         z-index: 9999;
         bottom: 0;
         position: fixed;
-        height: 150px;
+        height: 100px;
         width: 100%;
-        background-color: black;
+        background-color: #181818;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* player left */
+
+    .player-left img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .player-left,
+    .player-right {
+        flex-grow: 2;
+    }
+
+    .player-left {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .player-left > div > .title {
+        font-size: 15px;
+    }
+
+    .player-left > div > .subtitle {
+        font-size: 10px;
+    }
+
+    .item-player-left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        color: #7b7e82;
+    }
+
+    .player-left > div > .title,
+    .player-left > div > .subtitle {
+        margin: 0;
+        text-align: left;
+    } 
+
+    .player-left,
+    .player-center,
+    .player-right{
+        width: 10%;
+    }
+
+    
+    /* player center */
+    
+    .player-center {
+        padding: 10px;
+        flex-grow: 4;
+    }
+
+    .controller {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .controller > a,
+    .item-player-left a,
+    .player-right a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #play {
+        font-size: 30px;
+    }
+
+    .time-line {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .loading-bar {
+        width: 20vw;
+        height: 100px;
+        background-color: #ff1;
+    }
+
+    /* player right */
+
+    .player-right {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px;
     }
 }
