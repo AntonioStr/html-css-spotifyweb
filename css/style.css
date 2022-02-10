@@ -39,6 +39,10 @@
         width: 60%;
     }
 
+    .item-top {
+        height: 400px;
+    }
+
     .item-bottom > a {
         margin: .5rem;
     }
@@ -196,10 +200,41 @@
 
     /* player left */
 
-    .player-left img {
-        width: 30px;
-        height: 30px;
+    .player-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color :#7b7e82;
+    }
+
+    #sinister-small {
+        height: 2rem;
         margin-right: 10px;
+    }
+    
+    .item-player-left {
+        padding-left: 15px;
+    }
+
+    .item-player-mid {
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-player-mid > span {
+        text-align: left;
+        font-size: .7rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    div.player-left > div > a {
+        color: #7b7e82;
+    }
+
+    div.player-right > div > a {
+        color: #7b7e82;
     }
 
     .player-left,
@@ -207,39 +242,11 @@
         flex-grow: 2;
     }
 
-    .player-left {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .player-left > div > .title {
-        font-size: 15px;
-    }
-
-    .player-left > div > .subtitle {
-        font-size: 10px;
-    }
-
-    .item-player-left {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        color: #7b7e82;
-    }
-
-    .player-left > div > .title,
-    .player-left > div > .subtitle {
-        margin: 0;
-        text-align: left;
-    } 
-
     .player-left,
     .player-center,
     .player-right{
         width: 10%;
     }
-
     
     /* player center */
     
@@ -278,13 +285,43 @@
         justify-content: space-around;
     }
 
-    .loading-bar {
-        width: 20vw;
-        height: 100px;
-        background-color: #ff1;
+    .loading {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
     }
 
+    .loading-bar-back {
+        width: 28vw;
+        height: 5px;
+        background-color: #5a5a5a;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .loading-bar-load {
+        border-radius: 10px;
+        position: absolute;
+        width: 5vw;
+        height: 5px;
+        background-color: #c1c1c1;
+    }
+    
+
     /* player right */
+
+    .item-player-right {
+        display: flex;
+    }
+
+    .item-player-right a {
+        margin-right: 10px;
+    }
+
+    .item-player-right a > i {
+        font-size: 15px;
+        width: 10%;
+    }
 
     .player-right {
         display: flex;
@@ -292,4 +329,12 @@
         align-items: center;
         padding: 10px;
     }
+
+    .player-right .loading {
+        margin: 0;
+        display: flex;
+        width: 20%;
+    }
+
+    
 }
